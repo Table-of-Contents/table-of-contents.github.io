@@ -1,4 +1,4 @@
-const SHEET_ID = "PUT_YOUR_SHEET_ID_HERE";
+const SHEET_ID = "1T-s_5SS0mTjvLRLpqwMqLuHrNpH-zMTRZtNGzEeVIS0";
 
 const URL =
 `https://opensheet.elk.sh/${SHEET_ID}/Books`;
