@@ -5,46 +5,13 @@ const URL =
 
 const MUST_READ_THRESHOLD = 8.5;
 
-const MIN_VOTES = 3;
-const SITE_AVERAGE = 7.5;
-
 fetch(URL)
     .then(res => res.json())
     .then(data => {
 
-        data.sort((a, b) => {
-        
-            const aWeighted =
-                weightedRating(a);
-        
-            const bWeighted =
-                weightedRating(b);
-        
-            return bWeighted - aWeighted;
-        
-        });
-
-        function weightedRating(book) {
-
-            const R =
-                Number(book.avg_rating);
-        
-            const v =
-                Number(book.votes);
-        
-            const m =
-                MIN_VOTES;
-        
-            const C =
-                SITE_AVERAGE;
-        
-            return (
-                (v / (v + m)) * R
-                +
-                (m / (v + m)) * C
-            );
-        
-        }
+        data.sort((a, b) =>
+            Number(b.avg_rating) - Number(a.avg_rating)
+        );
 
         const booksDiv =
             document.getElementById("books");
