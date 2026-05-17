@@ -15,10 +15,17 @@ fetch(URL)
 
             div.className = "book";
 
-            div.innerHTML = `
-                <h2>${book.title}</h2>
-                <p>Average Rating: ${book.avg_rating}</p>
-            `;
+        div.innerHTML = `
+            <h2>${book.title}</h2>
+            
+            <p><strong>ID:</strong> ${book.book_id}</p>
+            
+            <p><strong>Author:</strong> ${book.author}</p>
+            
+            <p><strong>Average Rating:</strong> ${book.avg_rating}</p>
+            
+            <p><strong>Votes:</strong> ${book.votes}</p>
+        `;
 
             booksDiv.appendChild(div);
 
