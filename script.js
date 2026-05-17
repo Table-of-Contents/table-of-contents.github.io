@@ -1,4 +1,4 @@
-const SHEET_ID = "1T-s_5SS0mTjvLRLpqwMqLuHrNpH-zMTRZtNGzEeVIS0";
+const SHEET_ID = "PUT_YOUR_SHEET_ID_HERE";
 
 const URL =
 `https://opensheet.elk.sh/${SHEET_ID}/Books`;
@@ -11,46 +11,71 @@ fetch(URL)
             Number(b.avg_rating) - Number(a.avg_rating)
         );
 
-        const booksDiv = document.getElementById("books");
+        const booksDiv =
+            document.getElementById("books");
 
         data.forEach((book, index) => {
 
             const genres =
-                book.genres      
+                (book.genres || "")
                     .split(",")
-                    .map(g => g.trim());
+                    .map(g => g.trim())
+                    .filter(g => g);
 
             const undertones =
-                book.undertones
+                (book.undertones || "")
                     .split(",")
-                    .map(u => u.trim());
+                    .map(u => u.trim())
+                    .filter(u => u);
 
-            const div = document.createElement("div");
+            const div =
+                document.createElement("div");
 
             div.className = "book";
-            
+
+            const cover =
+                book.cover_link ||
+                "fallback.jpg";
+
             div.innerHTML = `
+
                 <div class="rank">
                     #${index + 1}
                 </div>
 
                 <img
                     class="cover"
-                    src="${book.cover_link || 'fallback.png'}"
+                    src="${cover}"
                     alt="${book.title}"
                 >
 
                 <div class="info">
 
-                    <h2>${book.title}</h2>
+                    <h2>
+                        ${book.title}
+                    </h2>
 
-                    <p class="author">
+                    <p class="meta">
                         ${book.author}
+                        •
+                        ${book.release_type}
                     </p>
 
                     <p class="rating">
                         ★ ${book.avg_rating}
                     </p>
+
+                    <div class="tags">
+
+                        ${genres.map(g =>
+                            `<span class="genre">${g}</span>`
+                        ).join("")}
+
+                        ${undertones.map(u =>
+                            `<span class="undertone">${u}</span>`
+                        ).join("")}
+
+                    </div>
 
                 </div>
 
@@ -66,17 +91,6 @@ fetch(URL)
 
                 </div>
 
-                <div class="tags">
-
-                    ${genres.map(g =>
-                        `<span class="genre">${g}</span>`
-                    ).join("")}
-
-                    ${undertones.map(u =>
-                        `<span class="undertone">${u}</span>`
-                    ).join("")}
-
-                </div>
             `;
 
             booksDiv.appendChild(div);
