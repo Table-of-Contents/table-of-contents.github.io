@@ -1,0 +1,114 @@
+{
+  "Experimental": {
+    "_description": "Literature that is difficult to pinpoint with any sort of precision. It often experiments with the conventions of literature and frequently blends genres and styles. It also can incorporate art and photography.",
+    "_children": {
+
+      "Postmodernist": {
+        "_description": "Characterized by the use of metafiction, unreliable narration, self-reflexivity, and intertextuality, and thematization of historical and political issues.",
+        "_children": {
+
+          "Ergodic": {
+            "_description": "Textual organization in which nontrivial effort is necessary for the reader to traverse the text.",
+            "_children": {}
+          },
+
+          "Metafiction": {
+            "_description": "Emphasizes its own narrative structure in a way that inherently reminds the audience that they are reading or viewing a fictional work.",
+            "_children": {}
+          }
+
+        }
+      }
+
+    }
+  },
+
+  "Poetry": {
+    "_description": "A form of literary art that uses aesthetic and often rhythmic qualities of language to evoke meanings in addition to, or in place of, literal or surface-level meanings.",
+    "_children": {
+      
+      "Narrative poetry": {
+        "_description": "A genre of poetry that tells a story. The term 'narrative poetry' is often reserved for smaller works, generally with more appeal to human interest.",
+        "_children": {
+
+          "Epic": {
+            "_description": "A form of narrative poetry defined by lengthy poems concerning events of an important or heroic nature to the culture of the time. It recounts, in a continuous narrative, the life and works of a heroic or mythological person or group of persons.",
+            "_children": {} 
+          }
+
+        }
+      },
+
+      "Lyric poetry": {
+        "_description": "Shorter, melodic, contemplative poems of a more personal nature that portray the poet's own feelings, states of mind, and perceptions.",
+        "_children": {
+
+          "Elegy": {
+            "_description": "A mournful, melancholy or plaintive form of lyric poetry, especially a lament for the dead. It may also reflect something that seems to the author to be strange or mysterious.",
+            "_children": {}
+          }
+
+        } 
+      },
+
+      "Visual poetry": {
+        "_description": "Incorporates graphic and visual design elements to create new ways of presenting and interpreting poetry.",
+        "_children": {
+
+         "Concrete poetry": {
+            "_description": "An arrangement of linguistic elements in which the typographical effect is more important in conveying meaning than verbal significance.",
+            "_children": {} 
+          }
+
+        }
+      }
+
+    }
+  },
+
+  "Horror": {
+    "_description": "N/A",
+    "_children": {}
+  },
+
+  "Drama": {
+    "_description": "N/A",
+    "_children": {
+      "Tragedy":{
+        "_description": "N/A",
+        "_children":{}
+      }
+    }
+  },
+
+  "Thriller": {
+    "_description": "N/A",
+    "_children": {
+      "Suspense":{
+        "_description": "N/A",
+        "_children":{}
+      }
+    }
+  },
+
+  "Fantasy": {
+    "_description": "N/A",
+    "_children": {}
+  },
+
+  "Action": {
+    "_description": "N/A",
+    "_children": {}
+  },
+
+  "Romance": {
+    "_description": "N/A",
+    "_children": {}
+  },
+
+  "Satire": {
+    "_description": "N/A",
+    "_children": {}
+  }
+
+}
