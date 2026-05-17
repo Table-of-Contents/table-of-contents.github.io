@@ -6,6 +6,8 @@ body {
 
     margin: 0;
     padding: 30px;
+
+    zoom: 0.85;
 }
 
 h1 {
