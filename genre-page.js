@@ -10,39 +10,48 @@ fetch("genres.json")
     .then(res => res.json())
     .then(genres => {
 
-        const genre =
+        const result =
             findGenre(
                 genres,
                 genreName
             );
 
-        if (!genre) {
+        if (!result) {
 
             document.getElementById(
                 "genre-page"
             ).innerHTML =
-                "<h1>Genre not found</h1>";
+                "<h1>Genre not found.</h1>";
 
             return;
         }
 
         renderGenrePage(
             genreName,
-            genre
+            result
         );
 
     });
 
-function findGenre(tree, target) {
+function findGenre(
+    tree,
+    target
+) {
 
     for (const genre in tree) {
 
-        if (genre === target)
+        if (genre === target) {
+
             return tree[genre];
+
+        }
+
+        const children =
+            tree[genre]._children || {};
 
         const found =
             findGenre(
-                tree[genre]._children,
+                children,
                 target
             );
 
@@ -65,33 +74,48 @@ function renderGenrePage(
             "genre-page"
         );
 
+    const children =
+        genre._children || {};
+
     div.innerHTML = `
 
-        <h1>${name}</h1>
+        <h1 class="genre-title">
+            ${name}
+        </h1>
 
-        <p>
+        <p class="genre-description">
             ${genre._description}
         </p>
 
-        <h2>Subgenres</h2>
+        ${
+            Object.keys(children).length > 0
+            ?
+            `
+            <h2>
+                Subgenres
+            </h2>
 
-        <ul>
+            <div class="subgenres">
 
-            ${Object.keys(
-                genre._children
-            ).map(child => `
+                ${Object.keys(children)
+                    .map(child => `
 
-                <li>
-                    <a href="
-                        genre.html?genre=${encodeURIComponent(child)}
-                    ">
-                        ${child}
-                    </a>
-                </li>
+                        <a
+                            class="subgenre-link"
+                            href="
+                            genre.html?genre=${encodeURIComponent(child)}
+                            "
+                        >
+                            ${child}
+                        </a>
 
-            `).join("")}
+                    `).join("")}
 
-        </ul>
+            </div>
+            `
+            :
+            ""
+        }
 
     `;
 
