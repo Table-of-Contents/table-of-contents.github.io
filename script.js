@@ -3,6 +3,8 @@ const SHEET_ID = "1T-s_5SS0mTjvLRLpqwMqLuHrNpH-zMTRZtNGzEeVIS0";
 const URL =
 `https://opensheet.elk.sh/${SHEET_ID}/Books`;
 
+const MUST_READ_THRESHOLD = 8.5;
+
 fetch(URL)
     .then(res => res.json())
     .then(data => {
@@ -35,7 +37,15 @@ fetch(URL)
 
         const cover =
             book.cover_link ||
-            "fallback.jpg";
+            "fallback.png";
+
+        const ratingNumber =
+            Number(book.avg_rating);
+
+        const star =
+            ratingNumber >= MUST_READ_THRESHOLD
+                ? "★"
+                : "☆";
 
          div.innerHTML = `
 
@@ -61,9 +71,16 @@ fetch(URL)
                     ${book.release_type}
                 </p>
 
-                  <p class="rating">
-                      ★ ${book.avg_rating}
-                  </p>
+                <p
+                    class="rating"
+                    title="${
+                        ratingNumber >= MUST_READ_THRESHOLD
+                            ? 'Must-read'
+                            : 'Not yet must-read'
+                    }"
+                >
+                      ${star} ${book.avg_rating}
+                </p>
 
                 <div class="tags">
 
