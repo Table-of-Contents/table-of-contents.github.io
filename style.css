@@ -178,3 +178,51 @@ h1 {
 .genre-entry:nth-child(1n) .genre-link {
     font-weight: 700;
 }
+
+.genre-title {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.genre-description {
+    font-size: 22px;
+
+    color: #bdbdbd;
+
+    max-width: 900px;
+
+    line-height: 1.5;
+
+    margin-bottom: 40px;
+}
+
+.subgenres {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.subgenre-link {
+
+    background: #1d1d1d;
+
+    border: 1px solid #343434;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.15s ease;
+}
+
+.subgenre-link:hover {
+
+    transform: translateY(-2px);
+
+    background: #292929;
+}
