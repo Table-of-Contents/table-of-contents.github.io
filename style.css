@@ -107,3 +107,26 @@ h1 {
     font-size: 24px;
     font-weight: bold;
 }
+
+.tags {
+    margin-top: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.genre {
+    background: #2d2d2d;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.undertone {
+    background: #171717;
+    border: 1px solid #333;
+    padding: 4px 10px;
+    border-radius: 20px;
+
+    color: #aaa;
+}
