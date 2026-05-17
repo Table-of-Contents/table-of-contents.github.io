@@ -92,11 +92,6 @@ h1 {
     transition: 0.15s ease;
 }
 
-.rating:hover {
-    transform: scale(1.03);
-    opacity: 0.92;
-}
-
 .tags {
     margin-top: 16px;
 
