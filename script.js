@@ -84,13 +84,27 @@ fetch(URL)
 
                 <div class="tags">
 
-                    ${genres.map(g =>
-                        `<span class="genre">${g}</span>`
-                    ).join("")}
-
-                    ${undertones.map(u =>
-                        `<span class="undertone">${u}</span>`
-                    ).join("")}
+                    ${genres.map(g => `
+                        <a
+                            class="genre"
+                            href="
+                                genre.html?genre=${encodeURIComponent(g)}
+                            "
+                        >
+                            ${g}
+                        </a>
+                    `).join("")}
+                    
+                    ${undertones.map(u => `
+                        <a
+                            class="undertone"
+                            href="
+                                genre.html?genre=${encodeURIComponent(u)}
+                            "
+                        >
+                            ${u}
+                        </a>
+                    `).join("")}
 
                     </div>
 
