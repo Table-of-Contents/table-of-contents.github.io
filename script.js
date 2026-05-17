@@ -5,7 +5,7 @@ const URL =
 
 const MUST_READ_THRESHOLD = 8.5;
 
-const MIN_VOTES = 32;
+const MIN_VOTES = 3;
 const SITE_AVERAGE = 7.5;
 
 fetch(URL)
