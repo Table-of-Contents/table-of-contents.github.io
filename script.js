@@ -15,10 +15,20 @@ fetch(URL)
 
         data.forEach((book, index) => {
 
+            const genres =
+                book.genres      
+                    .split(",")
+                    .map(g => g.trim());
+
+            const undertones =
+                book.undertones
+                    .split(",")
+                    .map(u => u.trim());
+
             const div = document.createElement("div");
 
             div.className = "book";
-
+            
             div.innerHTML = `
                 <div class="rank">
                     #${index + 1}
@@ -53,6 +63,18 @@ fetch(URL)
                     <p class="votes">
                         Votes: ${book.votes}
                     </p>
+
+                </div>
+
+                <div class="tags">
+
+                    ${genres.map(g =>
+                        `<span class="genre">${g}</span>`
+                    ).join("")}
+
+                    ${undertones.map(u =>
+                        `<span class="undertone">${u}</span>`
+                    ).join("")}
 
                 </div>
             `;
