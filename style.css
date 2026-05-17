@@ -33,17 +33,17 @@ h1 {
 
     border: 1px solid #272727;
 
-    padding: 20px;
+    padding: 16px;
 
-    min-height: 190px;
+    min-height: 145px;
 }
 
 .rank {
-    width: 140px;
+    width: 100px;
 
     flex-shrink: 0;
 
-    font-size: 72px;
+    font-size: 54px;
     font-weight: bold;
 
     color: white;
@@ -52,13 +52,13 @@ h1 {
 /* COVER IMAGE */
 
 .cover {
-    height: 150px;
+    height: 250px;
 
     width: auto;
 
     object-fit: contain;
 
-    margin-right: 30px;
+    margin-right: 22px;
 
     background: #181818;
 
@@ -73,24 +73,26 @@ h1 {
 
 .info h2 {
     margin: 0;
-    font-size: 52px;
-    line-height: 1;
+    font-size: 32px;
+    line-height: 1.1;
 }
 
 .meta {
-    margin-top: 10px;
-
+    margin-top: 6px;
     color: #b5b5b5;
-
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .rating {
-    margin-top: 20px;
-
-    font-size: 56px;
-
+    margin-top: 14px;
+    font-size: 42px;
     font-weight: bold;
+    transition: 0.15s ease;
+}
+
+.rating:hover {
+    transform: scale(1.03);
+    opacity: 0.92;
 }
 
 .tags {
