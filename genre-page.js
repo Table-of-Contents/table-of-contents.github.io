@@ -28,21 +28,26 @@ fetch("genres.json")
 
         renderGenrePage(
             genreName,
-            result
+            result.genreData,
+            result.parents
         );
 
     });
 
 function findGenre(
     tree,
-    target
+    target,
+    parents = []
 ) {
 
     for (const genre in tree) {
 
         if (genre === target) {
 
-            return tree[genre];
+            return {
+                genreData: tree[genre],
+                parents: parents
+            };
 
         }
 
@@ -52,7 +57,8 @@ function findGenre(
         const found =
             findGenre(
                 children,
-                target
+                target,
+                [...parents, genre]
             );
 
         if (found)
@@ -66,7 +72,8 @@ function findGenre(
 
 function renderGenrePage(
     name,
-    genre
+    genre,
+    parents
 ) {
 
     const div =
@@ -79,43 +86,71 @@ function renderGenrePage(
 
     div.innerHTML = `
 
-        <h1 class="genre-title">
-            ${name}
-        </h1>
+        <div class="page">
 
-        <p class="genre-description">
-            ${genre._description}
-        </p>
+            <div class="breadcrumbs">
 
-        ${
-            Object.keys(children).length > 0
-            ?
-            `
-            <h2>
-                Subgenres
-            </h2>
+                <a href="genres.html">
+                    Genres
+                </a>
 
-            <div class="subgenres">
+                ${parents.map(parent => `
+                    <span>›</span>
 
-                ${Object.keys(children)
-                    .map(child => `
+                    <a href="
+                        genre.html?genre=${encodeURIComponent(parent)}
+                    ">
+                        ${parent}
+                    </a>
+                `).join("")}
 
-                        <a
-                            class="subgenre-link"
-                            href="
-                            genre.html?genre=${encodeURIComponent(child)}
-                            "
-                        >
-                            ${child}
-                        </a>
+                <span>›</span>
 
-                    `).join("")}
+                <span class="current-genre">
+                    ${name}
+                </span>
 
             </div>
-            `
-            :
-            ""
-        }
+
+            <h1 class="genre-title">
+                ${name}
+            </h1>
+
+            <p class="genre-description">
+                ${genre._description}
+            </p>
+
+            ${
+                Object.keys(children).length > 0
+                ?
+                `
+                <h2 class="subgenre-heading">
+                    Subgenres
+                </h2>
+
+                <div class="subgenres">
+
+                    ${Object.keys(children)
+                        .map(child => `
+
+                            <a
+                                class="subgenre-link"
+                                href="
+                                genre.html?genre=${encodeURIComponent(child)}
+                                "
+                            >
+                                ${child}
+                            </a>
+
+                        `).join("")}
+
+                </div>
+                `
+                :
+                ""
+            }
+
+        </div>
 
     `;
 
