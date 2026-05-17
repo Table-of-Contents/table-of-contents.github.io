@@ -26,7 +26,7 @@ fetch(URL)
 
                 <img
                     class="cover"
-                    src="${book.cover_link}"
+                    src="${book.cover_link || 'fallback.png'}"
                     alt="${book.title}"
                 >
 
