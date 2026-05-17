@@ -7,9 +7,9 @@ fetch(URL)
     .then(res => res.json())
     .then(data => {
 
-        const booksDiv = document.getElementById("books");
-
         data.sort((a, b) => Number(b.avg_rating) - Number(a.avg_rating));
+
+        const booksDiv = document.getElementById("books");
         
         data.forEach(book => {
 
