@@ -385,3 +385,21 @@ h1 {
 
     line-height: 1.8;
 }
+
+.filters {
+
+    margin-bottom: 30px;
+}
+
+#genre-filter {
+
+    background: #181818;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    padding: 10px 14px;
+
+    font-size: 16px;
+}
