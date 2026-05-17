@@ -9,6 +9,8 @@ fetch(URL)
 
         const booksDiv = document.getElementById("books");
 
+        data.sort((a, b) => b.avg_rating - a.avg_rating);
+        
         data.forEach(book => {
 
             const div = document.createElement("div");
