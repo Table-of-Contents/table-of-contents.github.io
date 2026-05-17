@@ -12,15 +12,22 @@ fetch("genres.json")
 
     });
 
-function renderTree(tree, parent) {
-
-    const ul =
-        document.createElement("ul");
+function renderTree(
+    tree,
+    parent,
+    depth = 0
+) {
 
     for (const genre in tree) {
 
-        const li =
-            document.createElement("li");
+        const genreDiv =
+            document.createElement("div");
+
+        genreDiv.className =
+            "genre-entry";
+
+        genreDiv.style.marginLeft =
+            `${depth * 28}px`;
 
         const link =
             document.createElement("a");
@@ -28,27 +35,33 @@ function renderTree(tree, parent) {
         link.href =
             `genre.html?genre=${encodeURIComponent(genre)}`;
 
-        link.textContent = genre;
+        link.textContent =
+            genre;
 
-        li.appendChild(link);
+        link.className =
+            "genre-link";
 
-        ul.appendChild(li);
+        genreDiv.appendChild(link);
+
+        parent.appendChild(
+            genreDiv
+        );
 
         const children =
-            tree[genre]._children;
+            tree[genre]._children || {};
 
         if (
-            children &&
             Object.keys(children).length > 0
         ) {
+
             renderTree(
                 children,
-                li
+                parent,
+                depth + 1
             );
+
         }
 
     }
-
-    parent.appendChild(ul);
 
 }
