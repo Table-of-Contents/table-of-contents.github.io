@@ -32,14 +32,14 @@ h1 {
 
     padding: 20px;
 
-    min-height: 140px;
+    min-height: 180px;
 }
 
 .rank {
     font-size: 64px;
     font-weight: bold;
 
-    width: 120px;
+    width: 140px;
 
     color: white;
 
@@ -47,14 +47,16 @@ h1 {
 }
 
 .cover {
-    width: 90px;
-    height: 130px;
+    width: 110px;
+    height: 160px;
 
-    object-fit: cover;
+    object-fit: contain;
 
     margin-right: 25px;
 
-    background: #222;
+    background: #181818;
+
+    border: 1px solid #2c2c2c;
 }
 
 .info {
