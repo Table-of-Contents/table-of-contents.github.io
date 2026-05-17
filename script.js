@@ -16,64 +16,64 @@ fetch(URL)
 
         data.forEach((book, index) => {
 
-            const genres =
-                (book.genres || "")
-                    .split(",")
-                    .map(g => g.trim())
-                    .filter(g => g);
+        const genres =
+            String(book.genres || "")
+                .split(",")
+                .map(g => g.trim())
+                .filter(g => g);
 
-            const undertones =
-                (book.undertones || "")
-                    .split(",")
-                    .map(u => u.trim())
-                    .filter(u => u);
+        const undertones =
+            String(book.undertones || "")
+                .split(",")
+            .map(u => u.trim())
+        .filter(u => u);
 
-            const div =
-                document.createElement("div");
+        const div =
+            document.createElement("div");
+            
+        div.className = "book";
 
-            div.className = "book";
+        const cover =
+            book.cover_link ||
+            "fallback.jpg";
 
-            const cover =
-                book.cover_link ||
-                "fallback.jpg";
+         div.innerHTML = `
 
-            div.innerHTML = `
+            <div class="rank">
+                   #${index + 1}
+             </div>
+             
+            <img
+                class="cover"
+                src="${cover}"
+                alt="${book.title}"
+            >
 
-                <div class="rank">
-                    #${index + 1}
-                </div>
+            <div class="info">
 
-                <img
-                    class="cover"
-                    src="${cover}"
-                    alt="${book.title}"
-                >
+                <h2>
+                    ${book.title}
+                </h2>
 
-                <div class="info">
+                 <p class="meta">
+                    ${book.author}
+                     •
+                    ${book.release_type}
+                </p>
 
-                    <h2>
-                        ${book.title}
-                    </h2>
+                  <p class="rating">
+                      ★ ${book.avg_rating}
+                  </p>
 
-                    <p class="meta">
-                        ${book.author}
-                        •
-                        ${book.release_type}
-                    </p>
+                <div class="tags">
 
-                    <p class="rating">
-                        ★ ${book.avg_rating}
-                    </p>
+                    ${genres.map(g =>
+                        `<span class="genre">${g}</span>`
+                    ).join("")}
 
-                    <div class="tags">
-
-                        ${genres.map(g =>
-                            `<span class="genre">${g}</span>`
-                        ).join("")}
-
-                        ${undertones.map(u =>
-                            `<span class="undertone">${u}</span>`
-                        ).join("")}
+                    ${undertones.map(u =>
+                        `<span class="undertone">${u}</span>`
+                    ).join("")}
 
                     </div>
 
