@@ -1,0 +1,12 @@
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+.book {
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 10px;
+}
