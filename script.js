@@ -61,9 +61,18 @@ fetch(URL)
 
             <div class="info">
 
-                <h2>
+            <h2>
+            
+                <a
+                    class="book-link"
+                    href="
+                        book.html?id=${encodeURIComponent(book.book_id)}
+                    "
+                >
                     ${book.title}
-                </h2>
+                </a>
+            
+            </h2>
 
                  <p class="meta">
                     ${book.author}
