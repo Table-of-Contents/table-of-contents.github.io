@@ -242,3 +242,39 @@ h1 {
 
     background: #292929;
 }
+
+.page {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.genre-page-title {
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+.genre-page-subtitle {
+    color: #a8a8a8;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.back-link {
+
+    color: #9a9a9a;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    transition: 0.15s ease;
+}
+
+.back-link:hover {
+
+    transform: translateX(-2px);
+
+    color: white;
+}
