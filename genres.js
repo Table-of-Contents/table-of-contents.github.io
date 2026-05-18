@@ -3,7 +3,9 @@ fetch("genres.json")
     .then(genres => {
 
         const container =
-            document.getElementById("genre-tree");
+            document.getElementById(
+                "genre-tree"
+            );
 
         renderTree(
             genres,
@@ -20,14 +22,42 @@ function renderTree(
 
     for (const genre in tree) {
 
-        const genreDiv =
+        const genreData =
+            tree[genre];
+
+        const entry =
             document.createElement("div");
 
-        genreDiv.className =
+        entry.className =
             "genre-entry";
 
-        genreDiv.style.marginLeft =
-            `${depth * 28}px`;
+        entry.style.marginLeft =
+            `${depth * 24}px`;
+
+        const header =
+            document.createElement("div");
+
+        header.className =
+            "genre-header";
+
+        const children =
+            genreData._children || {};
+
+        const hasChildren =
+            Object.keys(children).length > 0;
+
+        const toggle =
+            document.createElement("span");
+
+        toggle.className =
+            "genre-toggle";
+
+        toggle.textContent =
+            hasChildren
+                ? "+"
+                : "•";
+
+        header.appendChild(toggle);
 
         const link =
             document.createElement("a");
@@ -41,23 +71,67 @@ function renderTree(
         link.className =
             "genre-link";
 
-        genreDiv.appendChild(link);
+        header.appendChild(link);
 
-        parent.appendChild(
-            genreDiv
+        entry.appendChild(header);
+
+        if (genreData._description) {
+
+            const desc =
+                document.createElement("div");
+
+            desc.className =
+                "genre-tree-description";
+
+            desc.textContent =
+                genreData._description;
+
+            entry.appendChild(desc);
+
+        }
+
+        const childrenContainer =
+            document.createElement("div");
+
+        childrenContainer.className =
+            "children-container";
+
+        childrenContainer.style.display =
+            "none";
+
+        entry.appendChild(
+            childrenContainer
         );
 
-        const children =
-            tree[genre]._children || {};
+        parent.appendChild(entry);
 
-        if (
-            Object.keys(children).length > 0
-        ) {
+        if (hasChildren) {
 
             renderTree(
                 children,
-                parent,
+                childrenContainer,
                 depth + 1
+            );
+
+            header.addEventListener(
+                "click",
+                () => {
+
+                    const open =
+                        childrenContainer.style.display ===
+                        "block";
+
+                    childrenContainer.style.display =
+                        open
+                            ? "none"
+                            : "block";
+
+                    toggle.textContent =
+                        open
+                            ? "+"
+                            : "−";
+
+                }
             );
 
         }
