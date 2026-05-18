@@ -2,6 +2,19 @@
   "Experimental": {
     "_description": "Literature that is difficult to pinpoint with any sort of precision. It often experiments with the conventions of literature and frequently blends genres and styles. It also can incorporate art and photography.",
     "_children": {
+      "Absurdist": {
+        "_description": "Explores the conflict between humanity’s desperate search for meaning and the silent response of the universe.",
+        "_children": {
+          "Dark Humor": {
+            "_description": "Incongruous, bizarre, or tragic events are treated with levity or confusion rather than straightforward drama.",
+            "_children": {}
+          }
+        }
+      },
+      "Antinovel": {
+        "_description": "An experimental work of fiction that avoids the familiar conventions of the novel and establishes its own conventions instead.",
+        "_children": {}
+      },
       "Postmodernist": {
         "_description": "Characterized by the use of metafiction, unreliable narration, self-reflexivity, and intertextuality, and thematization of historical and political issues.",
         "_children": {
@@ -11,6 +24,19 @@
           },
           "Metafiction": {
             "_description": "Emphasizes its own narrative structure in a way that inherently reminds the audience that they are reading or viewing a fictional work.",
+            "_children": {}
+          }
+        }
+      },
+      "Surrealism": {
+        "_description": "Merges dream imagery, the unconscious mind, and illogical juxtapositions with reality to defy conventions.",
+        "_children": {
+          "Automatism": {
+            "_description": "A form of abstract surrealism which bypasses conscious control, rational thought, and moral/aesthetic censorship during writing.",
+            "_children": {}
+          },
+          "Oneiric Surrealism": {
+            "_description": "Fuses the bizarre, hallucinatory experience of dreams with everyday reality, focusing on the internal working of the mind rather than external environments.",
             "_children": {}
           }
         }
