@@ -403,3 +403,70 @@ h1 {
 
     font-size: 16px;
 }
+
+.genre-entry {
+
+    margin-bottom: 14px;
+}
+
+.genre-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+.genre-toggle {
+
+    width: 18px;
+
+    color: #787878;
+
+    font-size: 18px;
+
+    user-select: none;
+
+    flex-shrink: 0;
+}
+
+.genre-link {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    transition: 0.15s ease;
+
+    display: inline-block;
+}
+
+.genre-link:hover {
+
+    opacity: 0.8;
+}
+
+.genre-tree-description {
+
+    color: #8e8e8e;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    max-width: 900px;
+
+    margin-top: 4px;
+
+    margin-left: 30px;
+}
+
+.children-container {
+
+    margin-top: 8px;
+}
