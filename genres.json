@@ -20,7 +20,12 @@
         "_children": {
           "Ergodic": {
             "_description": "Textual organization in which nontrivial effort is necessary for the reader to traverse the text.",
-            "_children": {}
+            "_children": {
+              "Cybertext": {
+                "_description": "",
+                "_children": {}
+              }
+            }
           },
           "Metafiction": {
             "_description": "Emphasizes its own narrative structure in a way that inherently reminds the audience that they are reading or viewing a fictional work.",
@@ -134,17 +139,64 @@
     }
   },
   "Horror": {
-    "_description": "N/A",
-    "_children": {}
+    "_description": "Utilizes suspense, dread, and the macabre to evoke feelings of fear, anxiety, and terror in the reader.",
+    "_children": {
+      "Gothic": {
+        "_description": "Blends fear with romance, typically featuring decaying ancient settings, curses, and brooding, atmospheric tension.",
+        "_children": {}
+      },
+      "Psychological Horror": {
+        "_description": "Focuses on the mental, emotional, and psychological states of characters rather than physical monsters to induce fear and paranoia.",
+        "_children": {}
+      },
+      "Dark Fantasy": {
+        "_description": "Combines horror elements with high-fantasy settings, featuring magic, mythical creatures, and terrifying otherworldly threats.",
+        "_children": {}
+      },
+      "Cosmic Horror": { 
+        "_description": "Focuses on the terrifying insignificance of humanity when confronted with vast, ancient, and incomprehensible forces, dimensions, or entities.",
+        "_children": {
+        "Lovecraftian": {
+          "_description": "Centers on the fear of the unknown, the insignificance of humanity, and malevolent ancient deities beyond human comprehension.",
+          "_children": {}
+        }
+        }
+      },
+      "Body Horror": {
+        "_description": "Explores the unnatural physical corruption, transformation, or destruction of the human body.",
+        "_children": {}
+      },
+      "Gore": {
+        "_description": "Utilizes explicit descriptions of graphic and violent imagery to shock and disturb.",
+        "_children": {
+          "Slasher": {
+            "_description": "Emphasizes graphic, extreme violence and visceral gore, often focusing on the sadistic acts of a character.",
+            "_children": {}
+          }
+        }
+      },
+      "Supernatural": {
+        "_description": "Revolves around paranormal events, demonic possessions, ghosts, or entities that defy the laws of nature.",
+        "_children": {}
+      },
+      "Survival Horror": {
+        "_description": "Focused on characters fighting to stay alive against overwhelming odds.",
+        "_children": {}
+      }
+    }
   },
   "Drama": {
-    "_description": "N/A",
+    "_description": "Prioritizes realistic emotional depth, character development, and interpersonal conflict",
     "_children": {
       "Tragedy": {
         "_description": "N/A",
         "_children": {}
       }
     }
+  },
+  "Comedy": {
+    "_description": "Intended to be humorous or amusing by inducing laughter.",
+    "_children": {}  
   },
   "Thriller": {
     "_description": "N/A",
@@ -155,9 +207,14 @@
       }
     }
   },
-  "Fantasy": {
+  "Fiction": {
     "_description": "N/A",
-    "_children": {}
+    "_children": {
+      "Fantasy": {
+        "_description": "N/A",
+        "_children": {}
+      }
+    }
   },
   "Action": {
     "_description": "N/A",
@@ -169,6 +226,11 @@
   },
   "Satire": {
     "_description": "N/A",
-    "_children": {}
+    "_children": {
+      "Parody": {
+        "_description": "N/A",
+        "_children": {}
+      }
+    }
   }
 }
