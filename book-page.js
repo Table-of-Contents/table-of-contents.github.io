@@ -64,7 +64,7 @@ function renderBookPage(book) {
 
     const cover =
         book.cover_link ||
-        "fallback.jpg";
+        "fallback.png";
 
     div.innerHTML = `
 
