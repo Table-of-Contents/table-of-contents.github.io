@@ -4,7 +4,17 @@
     "_children": {
       "Eclecticism": {
         "_description": "Combines extreme diverse and eclectic literary styles, themes, genres, or philosophical perspectives into a single work or body of writing rather than adhering to a single rigid tradition.",
-        "_children": {}
+        "_children": {
+          "Fragmentary prose": {
+            "_description": "Juxtaposing disjointed writings, aphorisms, and tone chonges to create a highly fractured narrative flow.",
+            "_children": {
+              "Collage novel": {
+                "_description": "Experimental literary genre that uses fragmented, displaced materials such as text clippings or illustrations to build its narrative rather than a traditional linear plot.",
+                "_children": {}
+              }
+            }
+          }
+        }
       },
       "Absurdist": {
         "_description": "Explores the conflict between humanity’s desperate search for meaning and the silent response of the universe.",
@@ -157,13 +167,13 @@
         "_description": "Combines horror elements with high-fantasy settings, featuring magic, mythical creatures, and terrifying otherworldly threats.",
         "_children": {}
       },
-      "Cosmic Horror": { 
+      "Cosmic Horror": {
         "_description": "Focuses on the terrifying insignificance of humanity when confronted with vast, ancient, and incomprehensible forces, dimensions, or entities.",
         "_children": {
-        "Lovecraftian": {
-          "_description": "Centers on the fear of the unknown, the insignificance of humanity, and malevolent ancient deities beyond human comprehension.",
-          "_children": {}
-        }
+          "Lovecraftian": {
+            "_description": "Centers on the fear of the unknown, the insignificance of humanity, and malevolent ancient deities beyond human comprehension.",
+            "_children": {}
+          }
         }
       },
       "Body Horror": {
@@ -200,7 +210,7 @@
   },
   "Comedy": {
     "_description": "Intended to be humorous or amusing by inducing laughter.",
-    "_children": {}  
+    "_children": {}
   },
   "Thriller": {
     "_description": "N/A",
