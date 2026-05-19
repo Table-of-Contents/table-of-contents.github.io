@@ -2,6 +2,10 @@
   "Experimental": {
     "_description": "Literature that is difficult to pinpoint with any sort of precision. It often experiments with the conventions of literature and frequently blends genres and styles. It also can incorporate art and photography.",
     "_children": {
+      "Eclecticism": {
+        "_description": "Combines extreme diverse and eclectic literary styles, themes, genres, or philosophical perspectives into a single work or body of writing rather than adhering to a single rigid tradition.",
+        "_children": {}
+      },
       "Absurdist": {
         "_description": "Explores the conflict between humanity’s desperate search for meaning and the silent response of the universe.",
         "_children": {
