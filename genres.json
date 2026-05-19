@@ -214,6 +214,10 @@
         "_description": "N/A",
         "_children": {}
       }
+      "Epistolary": {
+        "_description": "A work of fiction written as a series of documents.",
+        "_children": {}
+      }
     }
   },
   "Action": {
