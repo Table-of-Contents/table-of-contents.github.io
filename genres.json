@@ -221,8 +221,18 @@
 		"_children": {}
 	},
 	"Romance": {
-		"_description": "N/A",
-		"_children": {}
+		"_description": "Focuses on the development of a romantic relationship between characters.",
+		"_children": {
+			"Erotica": {
+				"_description": "Primarily focuses on the exploration of human sexuality, desire, and physical arousal. Sexual encounters serve as the primary driver of character development and narrative progression.",
+				"_children": {
+					"Smut": {
+						"_description": "Primarily focuses on the graphic description of sexual acts. Plot and deep character development remain minimal or secondary to immediate physical titillation.",
+						"_children": {}
+					}
+				}
+			}
+		}
 	},
 	"Satire": {
 		"_description": "N/A",
