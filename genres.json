@@ -1,254 +1,236 @@
 {
-  "Experimental": {
-    "_description": "Literature that is difficult to pinpoint with any sort of precision. It often experiments with the conventions of literature and frequently blends genres and styles. It also can incorporate art and photography.",
-    "_children": {
-      "Eclecticism": {
-        "_description": "Combines extreme diverse and eclectic literary styles, themes, genres, or philosophical perspectives into a single work or body of writing rather than adhering to a single rigid tradition.",
-        "_children": {
-          "Fragmentary prose": {
-            "_description": "Juxtaposing disjointed writings, aphorisms, and tone chonges to create a highly fractured narrative flow.",
-            "_children": {
-              "Collage novel": {
-                "_description": "Experimental literary genre that uses fragmented, displaced materials such as text clippings or illustrations to build its narrative rather than a traditional linear plot.",
-                "_children": {}
-              }
-            }
-          }
-        }
-      },
-      "Absurdist": {
-        "_description": "Explores the conflict between humanity’s desperate search for meaning and the silent response of the universe.",
-        "_children": {
-          "Dark Humor": {
-            "_description": "Incongruous, bizarre, or tragic events are treated with levity or confusion rather than straightforward drama.",
-            "_children": {}
-          }
-        }
-      },
-      "Antinovel": {
-        "_description": "An experimental work of fiction that avoids the familiar conventions of the novel and establishes its own conventions instead.",
-        "_children": {}
-      },
-      "Postmodernist": {
-        "_description": "Characterized by the use of metafiction, unreliable narration, self-reflexivity, and intertextuality, and thematization of historical and political issues.",
-        "_children": {
-          "Ergodic": {
-            "_description": "Textual organization in which nontrivial effort is necessary for the reader to traverse the text.",
-            "_children": {
-              "Cybertext": {
-                "_description": "",
-                "_children": {}
-              }
-            }
-          },
-          "Metafiction": {
-            "_description": "Emphasizes its own narrative structure in a way that inherently reminds the audience that they are reading or viewing a fictional work.",
-            "_children": {}
-          }
-        }
-      },
-      "Surrealism": {
-        "_description": "Merges dream imagery, the unconscious mind, and illogical juxtapositions with reality to defy conventions.",
-        "_children": {
-          "Automatism": {
-            "_description": "A form of abstract surrealism which bypasses conscious control, rational thought, and moral/aesthetic censorship during writing.",
-            "_children": {}
-          },
-          "Oneiric Surrealism": {
-            "_description": "Fuses the bizarre, hallucinatory experience of dreams with everyday reality, focusing on the internal working of the mind rather than external environments.",
-            "_children": {}
-          }
-        }
-      }
-    }
-  },
-  "Poetry": {
-    "_description": "A form of literary art that uses aesthetic and often rhythmic qualities of language to evoke meanings in addition to, or in place of, literal or surface-level meanings.",
-    "_children": {
-      "Narrative poetry": {
-        "_description": "A genre of poetry that tells a story. The term is often reserved for smaller works, generally with more appeal to human interest.",
-        "_children": {
-          "Epic": {
-            "_description": "A literary movement that advocates breaking the usual conventions of traditional poetry.",
-            "_children": {}
-          }
-        }
-      },
-      "Anti-poetry": {
-        "_description": "A literary movement that advocates breaking the usual conventions of traditional poetry.",
-        "_children": {}
-      },
-      "Lyric poetry": {
-        "_description": "Shorter, melodic, contemplative poems of a more personal nature that portray the poet's own feelings, states of mind, and perceptions.",
-        "_children": {
-          "Elegy": {
-            "_description": "A mournful, melancholy or plaintive form of lyric poetry, especially a lament for the dead. It may also reflect something that seems to the author to be strange or mysterious.",
-            "_children": {}
-          }
-        }
-      },
-      "Visual poetry": {
-        "_description": "Incorporates graphic and visual design elements to create new ways of presenting and interpreting poetry.",
-        "_children": {
-          "Concrete poetry": {
-            "_description": "An arrangement of linguistic elements in which the typographical effect is more important in conveying meaning than verbal significance.",
-            "_children": {}
-          }
-        }
-      },
-      "Digital poetry": {
-        "_description": "Poetry with a prominent and crucial use of computers. Can feature hypertext, kinetic poetry, interactive poetry, and other such poetries based around computer-specific functionalities.",
-        "_children": {
-          "Kinetic poetry": {
-            "_description": "A form of digital poetry that incorporates motion, animation, and interactivity.",
-            "_children": {}
-          },
-          "Code poetry": {
-            "_description": "Intermixes classical poetry and source code. Unlike digital poetry, code poems do not necessarily have to run through executable binaries.",
-            "_children": {
-              "Codework": {
-                "_description": "Creative writing which references or incorporates formal programming languages within the text.",
-                "_children": {}
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "Electronic": {
-    "_description": "Genre of literaturein which digital capabilities are used aesthetically or practically and, in some cases, cannot be easily printed (or cannot be printed at all) because elements crucial to the work cannot be carried over onto a printed version.",
-    "_children": {
-      "Interactive": {
-        "_description": "Works in which players use textual commands or buttons to influence the plot in some way.",
-        "_children": {
-          "Hypertext": {
-            "_description": "Characterized by the use of hypertext links that provide a new context for non-linearity in literature and reader interaction.",
-            "_children": {}
-          }
-        }
-      },
-      "Generative": {
-        "_description": "Automatically generated literature, typically using computers.",
-        "_children": {
-          "Combinatory": {
-            "_description": "Fragments, phrases, or rules, written with the intent of a machine, a system, or the reader to recombine them into new and often unpredictable texts.",
-            "_children": {}
-          },
-          "Permutational": {
-            "_description": "Words, syllables, or lines written and shuffled or systematically rearranged based on an algorithm, a ruleset, or a set of formal limitations.",
-            "_children": {}
-          },
-          "Procedural": {
-            "_description": "Body of text in which an algorithm or an AI dictates the plot direction based on predefined parameters rather than following a fixed, human-written script.",
-            "_children": {
-              "AI": {
-                "_description": "Controversial method of crating, analyzing, or organizing text with artificial intelligence.",
-                "_children": {}
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "Horror": {
-    "_description": "Utilizes suspense, dread, and the macabre to evoke feelings of fear, anxiety, and terror in the reader.",
-    "_children": {
-      "Gothic": {
-        "_description": "Blends fear with romance, typically featuring decaying ancient settings, curses, and brooding, atmospheric tension.",
-        "_children": {}
-      },
-      "Psychological Horror": {
-        "_description": "Focuses on the mental, emotional, and psychological states of characters rather than physical monsters to induce fear and paranoia.",
-        "_children": {}
-      },
-      "Dark Fantasy": {
-        "_description": "Combines horror elements with high-fantasy settings, featuring magic, mythical creatures, and terrifying otherworldly threats.",
-        "_children": {}
-      },
-      "Cosmic Horror": {
-        "_description": "Focuses on the terrifying insignificance of humanity when confronted with vast, ancient, and incomprehensible forces, dimensions, or entities.",
-        "_children": {
-          "Lovecraftian": {
-            "_description": "Centers on the fear of the unknown, the insignificance of humanity, and malevolent ancient deities beyond human comprehension.",
-            "_children": {}
-          }
-        }
-      },
-      "Body Horror": {
-        "_description": "Explores the unnatural physical corruption, transformation, or destruction of the human body.",
-        "_children": {}
-      },
-      "Gore": {
-        "_description": "Utilizes explicit descriptions of graphic and violent imagery to shock and disturb.",
-        "_children": {
-          "Slasher": {
-            "_description": "Emphasizes graphic, extreme violence and visceral gore, often focusing on the sadistic acts of a character.",
-            "_children": {}
-          }
-        }
-      },
-      "Supernatural": {
-        "_description": "Revolves around paranormal events, demonic possessions, ghosts, or entities that defy the laws of nature.",
-        "_children": {}
-      },
-      "Survival Horror": {
-        "_description": "Focused on characters fighting to stay alive against overwhelming odds.",
-        "_children": {}
-      }
-    }
-  },
-  "Drama": {
-    "_description": "Prioritizes realistic emotional depth, character development, and interpersonal conflict",
-    "_children": {
-      "Tragedy": {
-        "_description": "N/A",
-        "_children": {}
-      }
-    }
-  },
-  "Comedy": {
-    "_description": "Intended to be humorous or amusing by inducing laughter.",
-    "_children": {}
-  },
-  "Thriller": {
-    "_description": "N/A",
-    "_children": {
-      "Suspense": {
-        "_description": "N/A",
-        "_children": {}
-      }
-    }
-  },
-  "Fiction": {
-    "_description": "N/A",
-    "_children": {
-      "Fantasy": {
-        "_description": "N/A",
-        "_children": {}
-      },
-      "Epistolary": {
-        "_description": "A work of fiction written as a series of documents.",
-        "_children": {}
-      }
-    }
-  },
-  "Action": {
-    "_description": "N/A",
-    "_children": {}
-  },
-  "Romance": {
-    "_description": "N/A",
-    "_children": {}
-  },
-  "Satire": {
-    "_description": "N/A",
-    "_children": {
-      "Parody": {
-        "_description": "N/A",
-        "_children": {}
-      }
-    }
-  }
+	"Experimental": {
+		"_description": "Literature that is difficult to pinpoint with any sort of precision. It often experiments with the conventions of literature and frequently blends genres and styles. It also can incorporate art and photography.",
+		"_children": {
+			"Eclecticism": {
+				"_description": "Combines extreme diverse and eclectic literary styles, themes, genres, or philosophical perspectives into a single work or body of writing rather than adhering to a single rigid tradition.",
+				"_children": {
+					"Fragmentary prose": {
+						"_description": "Juxtaposing disjointed writings, aphorisms, and tone chonges to create a highly fractured narrative flow.",
+						"_children": {
+							"Collage novel": {
+								"_description": "Experimental literary genre that uses fragmented, displaced materials such as text clippings or illustrations to build its narrative rather than a traditional linear plot.",
+								"_children": {}
+							}
+						}
+					}
+				}
+			},
+			"Absurdist": {
+				"_description": "Explores the conflict between humanity’s desperate search for meaning and the silent response of the universe.",
+				"_children": {
+					"Dark Humor": {
+						"_description": "Incongruous, bizarre, or tragic events are treated with levity or confusion rather than straightforward drama.",
+						"_children": {}
+					}
+				}
+			},
+			"Antinovel": {
+				"_description": "An experimental work of fiction that avoids the familiar conventions of the novel and establishes its own conventions instead.",
+				"_children": {}
+			},
+			"Postmodernist": {
+				"_description": "Characterized by the use of metafiction, unreliable narration, self-reflexivity, and intertextuality, and thematization of historical and political issues.",
+				"_children": {
+					"Ergodic": {
+						"_description": "Textual organization in which nontrivial effort is necessary for the reader to traverse the text.",
+						"_children": {
+							"Cybertext": {
+								"_description": "",
+								"_children": {}
+							}
+						}
+					},
+					"Metafiction": {
+						"_description": "Emphasizes its own narrative structure in a way that inherently reminds the audience that they are reading or viewing a fictional work.",
+						"_children": {}
+					}
+				}
+			},
+			"Surrealism": {
+				"_description": "Merges dream imagery, the unconscious mind, and illogical juxtapositions with reality to defy conventions.",
+				"_children": {
+					"Automatism": {
+						"_description": "A form of abstract surrealism which bypasses conscious control, rational thought, and moral/aesthetic censorship during writing.",
+						"_children": {}
+					},
+					"Oneiric Surrealism": {
+						"_description": "Fuses the bizarre, hallucinatory experience of dreams with everyday reality, focusing on the internal working of the mind rather than external environments.",
+						"_children": {}
+					}
+				}
+			}
+		}
+	},
+	"Poetry": {
+		"_description": "A form of literary art that uses aesthetic and often rhythmic qualities of language to evoke meanings in addition to, or in place of, literal or surface-level meanings.",
+		"_children": {
+			"Narrative poetry": {
+				"_description": "A genre of poetry that tells a story. The term is often reserved for smaller works, generally with more appeal to human interest.",
+				"_children": {
+					"Epic": {
+						"_description": "A literary movement that advocates breaking the usual conventions of traditional poetry.",
+						"_children": {}
+					}
+				}
+			},
+			"Anti-poetry": {
+				"_description": "A literary movement that advocates breaking the usual conventions of traditional poetry.",
+				"_children": {}
+			},
+			"Lyric poetry": {
+				"_description": "Shorter, melodic, contemplative poems of a more personal nature that portray the poet's own feelings, states of mind, and perceptions.",
+				"_children": {
+					"Elegy": {
+						"_description": "A mournful, melancholy or plaintive form of lyric poetry, especially a lament for the dead. It may also reflect something that seems to the author to be strange or mysterious.",
+						"_children": {}
+					}
+				}
+			},
+			"Visual poetry": {
+				"_description": "Incorporates graphic and visual design elements to create new ways of presenting and interpreting poetry.",
+				"_children": {
+					"Concrete poetry": {
+						"_description": "An arrangement of linguistic elements in which the typographical effect is more important in conveying meaning than verbal significance.",
+						"_children": {}
+					}
+				}
+			},
+			"Digital poetry": {
+				"_description": "Poetry with a prominent and crucial use of computers. Can feature hypertext, kinetic poetry, interactive poetry, and other such poetries based around computer-specific functionalities.",
+				"_children": {
+					"Kinetic poetry": {
+						"_description": "A form of digital poetry that incorporates motion, animation, and interactivity.",
+						"_children": {}
+					},
+					"Code poetry": {
+						"_description": "Intermixes classical poetry and source code. Unlike digital poetry, code poems do not necessarily have to run through executable binaries.",
+						"_children": {
+							"Codework": {
+								"_description": "Creative writing which references or incorporates formal programming languages within the text.",
+								"_children": {}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"Electronic": {
+		"_description": "Genre of literaturein which digital capabilities are used aesthetically or practically and, in some cases, cannot be easily printed (or cannot be printed at all) because elements crucial to the work cannot be carried over onto a printed version.",
+		"_children": {
+			"Interactive": {
+				"_description": "Works in which players use textual commands or buttons to influence the plot in some way.",
+				"_children": {
+					"Hypertext": {
+						"_description": "Characterized by the use of hypertext links that provide a new context for non-linearity in literature and reader interaction.",
+						"_children": {}
+					}
+				}
+			},
+			"Generative": {
+				"_description": "Automatically generated literature, typically using computers.",
+				"_children": {
+					"Combinatory": {
+						"_description": "Fragments, phrases, or rules, written with the intent of a machine, a system, or the reader to recombine them into new and often unpredictable texts.",
+						"_children": {}
+					},
+					"Permutational": {
+						"_description": "Words, syllables, or lines written and shuffled or systematically rearranged based on an algorithm, a ruleset, or a set of formal limitations.",
+						"_children": {}
+					},
+					"Procedural": {
+						"_description": "Body of text in which an algorithm or an AI dictates the plot direction based on predefined parameters rather than following a fixed, human-written script.",
+						"_children": {
+							"AI": {
+								"_description": "Controversial method of crating, analyzing, or organizing text with artificial intelligence.",
+								"_children": {}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"Drama": {
+		"_description": "Prioritizes realistic emotional depth, character development, and interpersonal conflict",
+		"_children": {
+			"Tragedy": {
+				"_description": "N/A",
+				"_children": {}
+			}
+		}
+	},
+	"Comedy": {
+		"_description": "Intended to be humorous or amusing by inducing laughter.",
+		"_children": {}
+	},
+	"Thriller": {
+		"_description": "N/A",
+		"_children": {
+			"Suspense": {
+				"_description": "N/A",
+				"_children": {}
+			}
+		}
+	},
+	"Fiction": {
+		"_description": "N/A",
+		"_children": {
+			"Speculative": {
+				"_description": "Explores 'what if' scenarios rooted in hypothetical, supernatural, futuristic, or otherwise imaginative concepts, allowing authors to examine real-world social, technological, and ethical issues through non-realistic settings.",
+				"_children": {
+					"Fantasy": {
+						"_description": "Features magic, mythical creatures, and supernatural elements, often being set in entirely invented worlds.",
+						"_children": {}
+					},
+					"Science Fiction": {
+						"_description": "Explores futuristic concepts such as advanced technology, space exploration, and time travel.",
+						"_children": {}
+					},
+					"Utopian": {
+						"_description": "Describes an imagined, idealized world where societal ills like poverty, war, disease, and crime have been eradicated.",
+						"_children": {}
+					},
+					"Dystopian": {
+						"_description": "Depicts a fractured, oppressive universe where societal control is maintained through technological, bureaucratic, or totalitarian means.",
+						"_children": {}
+					},
+					"Alternative History": {
+						"_description": "Stories that ask 'what if' a major historical event had a different outcome.",
+						"_children": {}
+					},
+					"Supernatural": {
+						"_description": "Fiction incorporating ghosts, demons, or other paranormal threats, sometimes applied to historical or realistic settings.",
+						"_children": {}
+					},
+					"Magical Realism: {
+						"_description": "Incorporates magical elements as a normal part of an otherwise mundane, realistic world.",
+						"_children": {}
+					}
+				}
+			},
+			"Epistolary": {
+				"_description": "A work of fiction written as a series of documents.",
+				"_children": {}
+			}
+		}
+	},
+	"Action": {
+		"_description": "N/A",
+		"_children": {}
+	},
+	"Romance": {
+		"_description": "N/A",
+		"_children": {}
+	},
+	"Satire": {
+		"_description": "N/A",
+		"_children": {
+			"Parody": {
+				"_description": "N/A",
+				"_children": {}
+			}
+		}
+	}
 }
