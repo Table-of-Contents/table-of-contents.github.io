@@ -69,7 +69,7 @@
 				"_description": "A genre of poetry that tells a story. The term is often reserved for smaller works, generally with more appeal to human interest.",
 				"_children": {
 					"Epic": {
-						"_description": "A literary movement that advocates breaking the usual conventions of traditional poetry.",
+						"_description": "Long, narrative poetry that chronicles the extraordinary deeds, adventures, and heroic journey of a central protagonist.",
 						"_children": {}
 					}
 				}
